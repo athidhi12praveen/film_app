@@ -1,0 +1,84 @@
+<div class="home">
+    <div class=" row text-light w-100" >
+        <div class="col-lg-6 p-5 ">
+      
+          <img class="img-fluid max-width-100% height-auto mt-2" src="https://i.postimg.cc/TPZ6Fnxp/wp1945939.jpg" alt=""
+            height="800px" width="1400px">
+      
+        </div>
+        <div class="col-lg-6 p-5 text-center ">
+          <h6 class=" fw-bold" style="color: rgb(72, 72, 96); margin-top: 100px;"> EXPLORE IN ALL LANGUAGES</h6>
+      
+          <h2 class="heading mt-2 text-danger"><b>MOVIXER</b></h2>
+      
+          <p class="mt-2 v text-secondary">Start watching from where you left off, personalise for kids and more....</p>
+      
+      
+      
+      
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     <div class="head" >
+          <div class="row " >
+            <div class="col-3">
+          
+            </div>
+            <div class="col-7">
+              <div class="search mt-5 mb-5 align-items-center">
+                <input
+                [(ngModel)]="filmName"
+                  type="text"
+                  name="search"
+                  placeholder="Search films...!"
+                  class="form-control pt-1 pb-1 ps-3 w-100"
+                  
+                />
+              </div>
+            </div>
+            <div class="col-2">
+          
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+       
+      
+
+
+          <div class="my-card d-flex row ms-5 mb-5" >
+          
+                <div *ngFor="let i of filmList | searchpipe : filmName : 'Title' " id="card" name="card"   class=" card shadow p-2 col-lg-3   mb-5 text-light ms-5 me-3"
+                style="width: 16rem;">
+                <a routerLink="view/{{i.Id}}" style="text-decoration: none;">
+                  <img [src]="i.Images"   class="card-img-top" alt="..." height="200px">
+            
+                </a>
+                <div class="card-body text-center p-2" style="background-color: black;">
+                  <h5 class="card-title " style="font-style: italic;color:white ;"></h5>
+                  <p class="card-text text-secondary"><span style="color: red;">TITLE :</span> {{i.Title}}</p>
+                  <p class="card-text text-secondary"><span style="color: red;">LANGUAGE :</span> {{i.Language}}</p>
+                  <p class="card-text text-secondary"><span style="color: red;">RELEASED :</span> {{i.Released}}</p>
+  
+  
+            
+            
+              </div>
+             </div>
+          
+          
+          
+          </div>
+           <!-- </div>  -->
+ </div>
+       

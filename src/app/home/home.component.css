@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    background-color: black;
+}
+h2{
+    font-size: 80px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+
+@media(min-width:400px){
+    .heading{
+        text-align: center;
+        margin-left: -25px;
+    }
+    .search{
+        margin-left: -20px;
+    }
+    
+    
+}
+
+
+
+
+@media(min-width:800px){
+    
+    
+    
+}
+
+ @media(min-width:700px){
+    
+    
+    
+}
+
+@media(max-width:280px){
+    
+    .heading{
+        text-align: center;
+        margin-left: -30px;
+        font-size: larger;
+    }
+    
+    
+    
+    
+}
+
+@media(max-width:380px){
+    
+    h2{
+        font-size: 50px;
+    }
+
+    
+    
+    
+    
+}
+
+
+
+
+
