@@ -12,6 +12,16 @@ h2{
 }
 
 
+.explore-text {
+    color: rgb(72, 72, 96);
+    margin-top: 100px; 
+}
+
+@media (max-width: 768px) {
+    .explore-text {
+        margin-top: 0;
+    }
+}
 
 
 @media(min-width:400px){
